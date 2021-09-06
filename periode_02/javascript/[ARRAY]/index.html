@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	ARRAY
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>ARRAY</title>
+</head>
+
+<body>
+
+<p id="dag"></p>
+
+<script>
+
+    var d = new Date(prompt("yyyy-mm-dd"));
+		
+    var weekday = [
+			"Zondag",
+			"Maandag",
+			"Dinsdag",
+			"Woensdag",
+			"Donderdag",
+			"Vrijdag",
+			"Zaterdag",
+		];
+		
+    var n = weekday[d.getDay()];
+    document.getElementById("dag").innerHTML = n;
+		
+</script>
+
+</body>
+
+</html>

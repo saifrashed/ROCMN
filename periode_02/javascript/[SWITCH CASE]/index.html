@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Switch case</title>
+</head>
+
+<body>
+
+<p id="prijs"></p>
+
+<script>
+	var floatBedrag = parseFloat(prompt("Wat is het aankoopbedrag"));
+	var stringKleur = prompt("Uw kleur sticker.");
+	
+	var korting;
+	var kortingsBedrag;
+	var eindBedrag
+	
+switch (stringKleur) {
+
+	case "geel":
+			korting = 10;
+			break;
+			
+	case "rood":
+			korting = 15;
+			break;
+
+	case "blauw":
+			korting = 20;
+			break;			
+			
+	default:
+			korting = 5;
+			break;
+}	
+
+	kortingsBedrag = (floatBedrag / 100) * korting;
+	eindBedrag = floatBedrag-kortingsBedrag;
+
+	document.getElementById("prijs").innerHTML = "<br>Aankoopbedrag: " + floatBedrag;
+	document.getElementById("prijs").innerHTML += "<br>korting: " + stringKleur;
+	document.getElementById("prijs").innerHTML += "<br>Uw nieuwe prijs is: " + eindBedrag;
+
+</script>
+</body>
+
+</html>

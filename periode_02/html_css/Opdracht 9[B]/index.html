@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	Advertentie op een spel
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Dungeon Hunter 3</title>
+</head>
+
+<body>
+	<div class="main_game">
+		<img id="game" src="img\game.jpg" alt="Game">
+		
+		<div id="game_btn" class="game_advert">
+			<img src="img\ad.png" alt="ad">
+			<a onclick="closeAdvert(game_btn);" class="advert_text">Skip deze advertentie</a>
+		</div>
+	</div>
+
+	<script>
+
+		function closeAdvert(game_btn){
+
+				// Het knop veroorzaakt een display none op de advertentie.
+			document.getElementById("game_btn").style.display = "none";
+
+				// De achtergrond weer vertonen.
+			document.getElementById("game").style.opacity = 1.0;
+			document.getElementById("game").style.filter  = "alpha(opacity=100)"
+		}
+		
+	</script>
+</body>
+
+</html>

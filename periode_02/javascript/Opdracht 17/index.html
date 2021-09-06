@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Date</title>
+</head>
+
+<body>
+<p id="birth">Answer</p>
+<p id="weekday">Answer</p>
+<p id="nextday">Answer</p>
+<script>
+
+var dayOfBirth = new Date("2001-02-17 00:00:00"); // Verjaardag
+document.getElementById("birth").innerHTML = dayOfBirth; // vermelden in HTML
+
+var weekDay = dayOfBirth.getDay(); // weekdag
+document.getElementById("weekday").innerHTML = weekDay +  "(0=zondag .. 6=zaterdag)";
+
+// Date met miliseconde uitrekenen
+
+var dateNext	= new Date();
+var dateToday	= new Date();
+var msecToday = dateToday.getTime();
+var msecDay 	= (24*60*60*1000);
+
+dateNext.setTime(msecToday + (msecDay * 50)); //msec in 10 dagen
+document.getElementById("nextday").innerHTML = dateNext;
+
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,64 @@
+/*<!-
+   Class:   4A7B
+   Name:    Saif Rashed
+   Purpose: Styling voor mij websites
+
+   mm-dd-yyyy Description
+   ---------- ---------------------------------------
+   01-01-2017 Initial
+   11-03-2017 Added viewport functionality
+-->*/
+
+
+
+body {
+	background-color: black;
+}
+
+
+a:link, a:visited {
+    background-color:white;
+    color:black;
+    padding:15px 930px;
+    text-align:center; 
+    text-decoration:none;
+    display:inline-block;
+}
+
+a:hover, a:active {
+    background-color:grey;
+}
+
+h1 {
+	color:white;
+	border:4px;
+	border-style:solid;
+	border-color:white;
+	text-align:center;
+}
+
+h2 {
+	color: white;
+	border:2px dashed white;
+	text-align:center;
+}
+
+p {
+	color:white;
+	background-color:grey;
+	text-align:center;
+}
+
+pre {
+	color:white;
+	background-color:grey;
+	text-align:center;
+}
+
+
+img {
+	display:block;
+	margin:auto;
+	border-radius:20%;
+}
+

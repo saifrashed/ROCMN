@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose: Toets opdracht 1
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Opdracht 1</title>
+</head>
+
+<body>
+
+
+<script>
+
+	var length = parseInt(prompt("Hoe lang is de schutting in meters?"));	
+	var hours  = parseInt(prompt("Hoeveel uur was je er mee bezig?"));
+
+	var materialFee  = 80 * length ; 
+	var workFee      = 60 * hours ; 
+
+
+	document.write("Materiaal: " + materialFee + "<br>" + "Arbeid: " + workFee + "<br>" + "Totaal: " + (materialFee+workFee) );
+
+
+</script>	
+
+</body>
+
+</html>

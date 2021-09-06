@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Inloggen</title>
+</head>
+
+<body>
+	<p id="login"></p>
+	
+	<script>
+	var myLogin				= prompt("Login: ");
+	var myPassword		= prompt("Password: ");
+	var errorMessage	= "";
+	var statusLogin		= "";
+	
+	console.log("myLogin:   " + myLogin);
+	console.log("myPassword:   " + myPassword);
+	console.log(errorMessage);
+	console.log(statusLogin);	
+	
+	
+
+		switch (myLogin) {
+			case "administrator":
+				if (myPassword != "Ballpo1nt") {
+					errorMessage = "Verkeerde Wachtwoord";
+				}
+				break;
+			case "developer":
+				if (myPassword != "Pizza2017") {
+					errorMessage = "Verkeerde Wachtwoord";
+				}
+				break;
+			case "Human resource":
+				if (myPassword != "MyPeople") {
+					errorMessage = "Verkeerde Wachtwoord";
+				}
+				break;
+			default:
+					errorMessage = "Deze Login bestaat niet";
+				break;
+		}
+		
+		statusLogin = "Je bent ingelogd";
+		if (errorMessage != "") statusLogin = errorMessage;
+
+		document.getElementById("login").innerHTML = statusLogin;
+		
+	</script>
+</body>
+
+</html>

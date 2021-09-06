@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	Fruit app
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Fruit App</title>
+</head>
+
+<body>
+<div class="header">
+	<h1>Samenstellen fruitmand</h1>
+</div>
+
+<div class="selection_container">
+	<p id="selection">Fruit inhoud</p>
+</div>
+
+<div class="select">
+	<div id="left">
+		<button id="first"    onclick="navigatie(this.id);">first</button>
+		<button id="previous" onclick="navigatie(this.id);">Previous</button>
+		<button id="next" 	  onclick="navigatie(this.id);">Next</button>
+		<button id="last"	  onclick="navigatie(this.id);">Last</button>
+	</div>
+
+	<div id="right">
+		<button id="asc"      onclick="sort(this.id);">Sort asc</button>       
+		<button id="desc"     onclick="sort(this.id);">Sort desc</button> 
+	</div>            
+</div>
+
+<div class="select_horizontal">
+	<button id="add"      onclick="operating(this.id);">add</button>
+	<button id="del"      onclick="operating(this.id);">del</button>
+	<button id="search"   onclick="search(this.id);">search</button>
+</div>	
+
+<div class="selected_container">
+	<p id="selected">[Selected fruit]</p>
+</div>	
+
+
+	<script>
+		var fruitDef = ["appels","druiven","sinasappels"]; // Default fruit
+		var fruitAll = ["tomaat","advocado"]; // Array voor de geselecteerde fruit
+		var fruitNdx = 0; // teller
+
+		var fruitAll = fruitAll.concat(fruitDef);  // Meng fruitdef & fruitInput
+
+		console.log(fruitNdx);
+		console.log(fruitAll);
+
+		updateFruit();
+
+		function updateFruit() { // update screen
+			//selection
+			document.getElementById("selection").innerHTML = fruitAll; 
+			// selected
+			document.getElementById("selected").innerHTML = fruitAll[fruitNdx]; 
+		}
+
+		function navigatie(id) {
+
+			switch(id) {
+				case "first":
+				fruitNdx = 0;
+				break;
+
+				case "next":
+				fruitNdx++;
+				if(fruitNdx >= fruitAll.length) {fruitNdx = fruitAll.length-1;}
+				break;
+
+				case "previous":
+				fruitNdx--;
+				if(fruitNdx < 0) {fruitNdx = 0;}
+				break;
+
+				case "last":
+				fruitNdx = fruitAll.length-1;
+				break;				
+			} // Einde switch case
+
+			updateFruit();	
+		}	// Einde Functie navigatie
+
+		function sort(sortId) { // Sort functie
+
+			console.log("sortId: " + sortId);
+
+			if (sortId == "asc") {
+
+				console.log("ascending");
+
+				fruitAll.sort(
+				 	function compare(a,b) {
+
+				 		var x = a.toLowerCase();
+				 		var y = b.toLowerCase();
+
+				 		console.log("sort-compare-a: " + a );
+				 		console.log("sort-compare-b: " + b );
+				 		console.log("sort-compare-x: " + x );
+				 		console.log("sort-compare-y: " + y );
+
+				 	if (x >  y) return  1; //switch
+					if (x == y) return  0; //value are equal
+					if (x <  y) return -1; //already ascending
+				 	// Sort ascending
+
+				 	console.log(fruitAll)
+				 	
+				} ); 
+				} else { // Sort Descending
+
+				console.log("descending");
+
+				fruitAll.sort(
+				 	function compare(a,b) {
+
+				 		var x = a.toLowerCase();
+				 		var y = b.toLowerCase();
+
+				 		console.log("sort-compare-a: " + a );
+				 		console.log("sort-compare-b: " + b );
+				 		console.log("sort-compare-x: " + x );
+				 		console.log("sort-compare-y: " + y );
+
+					 	if (x >  y) return -1; //switch
+						if (x == y) return  0; //value are equal
+						if (x <  y) return  1; //already ascending
+					 	// Sort ascending
+
+					 	console.log(fruitAll);
+				 		} 
+				 	);
+				}
+				
+				updateFruit();
+				};
+
+
+					function operating(id) {
+ 						
+ 						console.log(id); 
+
+						if (id == "add") {
+
+							var x = prompt("Wat wilt u toevoegen?");
+
+							if (fruitAll.indexOf(x) >= 0) {
+								alert(x + " is al toegevoegd! ");
+								return;
+							};
+
+							fruitAll.splice(fruitNdx, 0, x);
+
+						} else {
+
+							if (fruitDef.indexOf(fruitAll[fruitNdx]) >= 0) {
+								alert("Dit is standaard fruit en kan NIET verwijderd worden.");
+								return;
+							};
+
+							fruitAll.splice(fruitNdx, 1);
+
+						};
+						
+						updateFruit();
+					};
+
+
+					function search(id) {
+
+						console.log(id);
+
+						if (id == "search") {
+
+							var y = prompt("Wat wilt u opzoeken.");
+
+							console.log(y);
+
+							if(fruitAll.indexOf(y) >= 0 ) {
+
+								alert("het product is beschikbaar!");
+
+							} else {
+
+								alert("Misschien moet u een product toevoegen.");
+
+							};
+
+						}; 
+
+						updateFruit();
+					};
+	</script>
+
+</body>
+
+</html>

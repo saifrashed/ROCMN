@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	Car financiering
+
+	mm-dd-yyyy javascript 
+	-------------------------------------------------
+	11-17-2017 Initial
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Buy Your Car!</title>
+</head>
+
+<body>
+	
+	<div id="hdr"> 
+		<h2> Saif's Cars</h2>
+		<p id="display_date"><script>document.getElementById("display_date").innerHTML = Date();</script></p>
+	</div>
+	
+	<div id="personal_info"> 
+	<p id="display_name"><script>document.getElementById("display_name").innerHTML ="Naam: " + name;</script></p>
+	<p id="display_invoice"><script>document.getElementById("display_invoice").innerHTML ="Factuurnummer: " + invoice;</script></p>
+	</div>
+	
+	<div id="product_img">
+		<img src=".\img\ferrari.png" alt="Car"> 
+	</div>
+	
+	<div class="tbl">
+		<table>
+			<tr>
+				<td>Auto Model</td>
+				<td class="align-right"><script>document.write(car_model);</script></td>
+			</tr>	
+			</br>
+			<tr>
+				<td>Prijs</td>
+				<td class="align-right"><script>document.write(price);</script></td>
+			</tr>	
+			</br>
+			<tr>
+				<td>Retour Prijs</td>
+				<td class="align-right"><script>document.write(return_price);</script></td>
+			</tr>	
+			</br>
+			<tr>
+				<td>Korting</td>
+				<td class="align-right"><script>document.write(discount);</script></td>
+			</tr>	
+			</br>
+			<tr>
+				<td>Milieuheffing</td>
+				<td class="align-right"><script>document.write(envir_tax);</script></td>
+			</tr>	
+			</br>
+			<tr>
+				<td>Totaal</td>
+				<td class="align-right"><script>document.write(total);</script></td>
+			</tr>	
+		</table>
+	</div>	
+</body>
+
+
+</html>

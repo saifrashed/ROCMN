@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>if statement</title>
+</head>
+
+<body>
+
+<p id="school"></p>
+<script>
+
+var leeftijd = parseInt(prompt("Uw leeftijd alstublieft"));
+
+if (leeftijd <= 4){
+			document.getElementById("school").innerHTML = "U hoeft nog niet naar school";
+	} else if (leeftijd < 12){
+			document.getElementById("school").innerHTML = "U kunt naar de basisschool";
+	} else if (leeftijd < 16){
+			document.getElementById("school").innerHTML = "U kunt naar het voortgezet onderwijs";
+	}	else {
+			document.getElementById("school").innerHTML = "U kunt werken";
+	}
+
+</script>
+
+</body>
+
+</html>

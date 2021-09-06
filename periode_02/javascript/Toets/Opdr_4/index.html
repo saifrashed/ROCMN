@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose: Toets opdracht 4
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Opdracht 4</title>
+</head>
+
+<body>
+
+<p id="inhoud"> persoon niet gevonden </p>
+
+<script>
+
+  var persoon = prompt("Vul een persoon in: ");
+  var pers = persoon.toLowerCase();
+
+  switch(pers) {
+
+  	case "clara koe":
+  	 document.getElementById("inhoud").innerHTML = "Donald Duck";
+  	 break;
+
+  	case "willie wortel":
+  	 document.getElementById("inhoud").innerHTML = "Donald Duck";
+  	 break;
+
+  	case "boris boef":
+  	 document.getElementById("inhoud").innerHTML = "Donald Duck";
+  	 break;
+
+  	case "jane":
+  	 document.getElementById("inhoud").innerHTML = ("Tarzan");
+  	 break;
+
+  	case "robin":
+  	 document.getElementById("inhoud").innerHTML = ("Batman");
+  	 break;
+
+  	case "joker":
+  	 document.getElementById("inhoud").innerHTML = ("Batman");;
+  	 break;
+
+  	case "kerchak":
+  	 document.getElementById("inhoud").innerHTML = "Tarzan";
+  	 break;
+  }
+
+  </script>
+
+</body>
+
+</html>

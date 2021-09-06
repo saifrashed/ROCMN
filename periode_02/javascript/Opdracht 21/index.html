@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Dag van de maand</title>
+</head>
+
+<body>
+	<p id="dateInput"></p>
+	<p id="currentDay"></p>
+	<p id="typeDay"></p>
+<script>
+	
+	var strDate = prompt("YYYY-MM-DD"); // string
+	var inputDate = new Date(strDate);
+	
+	var weekDay;
+		switch (inputDate.getDay()) {
+			case 0:
+					weekDay = "Zondag";
+					break;
+			case 1:
+					weekDay = "Maandag";
+					break;
+			case 2:
+					weekDay = "Dinsdag";
+					break;
+			case 3:
+					weekDay = "Woensdag";
+					break;
+			case 4:
+					weekDay = "Donderdag";
+					break;
+			case 5:
+					weekDay = "Vrijdag";
+					break;
+			case 6:
+					weekDay = "Zaterdag";
+	}
+	
+	var typeDay;
+		switch (inputDate.getDay()) {
+			case 0:
+			case 6:
+					typeDay = "Its weekend"
+					break;
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+					typeDay = "You are still throughout the week!"
+					break;
+	}
+	
+	document.getElementById("dateInput").innerHTML = strDate;
+	document.getElementById("currentDay").innerHTML = "vandaag is het " + weekDay;	
+	document.getElementById("typeDay").innerHTML = typeDay;	
+	
+</script>
+</body>
+
+
+</html>

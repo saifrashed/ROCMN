@@ -1,0 +1,35 @@
+
+/*
+   Class:   4A7B
+   Name:    Saif Rashed
+   Purpose:	Opdracht 35
+
+   mm-dd-yyyy Description
+   -------------------------------------------------
+   01-01-2017 Initial
+   11-03-2017 Added viewport functionality
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:10px;
+	font-size:100%;
+	font-family:'Calibri', 'Arial', 'Helvetica';
+	color:black;
+}
+
+ul {
+	font-size:20px;
+	list-style-type:circle;
+}
+
+ol {
+	font-size:20px;
+	list-style-type:upper-roman;
+}

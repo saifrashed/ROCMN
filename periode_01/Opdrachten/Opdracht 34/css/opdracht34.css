@@ -1,0 +1,116 @@
+html, body{
+	background-image:url("bgrocmn.png");
+  background-repeat:repeat-y;
+	background-position:fixed;
+	font-size:100%;
+	font-family:Arial;
+	color:black;
+	background-color:white;
+	margin:0 auto;
+	height:100%;
+	width:90%;
+	overflow:aut0;
+}
+
+a:link {
+  color:white;
+	text-decoration:none;
+}
+
+a:visited {
+  color:white;
+	text-decoration:none;
+}
+
+a:hover {
+  color:#007AC9;	
+	text-decoration:none;
+}
+
+a:active {
+  color:white;
+	text-decoration:none;
+}
+
+body #hdr {
+	color:#2E3192;
+	font-size:2em;
+	text-align:center;
+	background-color:white;
+	padding:2.5%;
+	margin-top:10px;
+	height:100px:
+}
+
+body #nav {
+	font-size:1.5em;
+	background-color:#2E3192;
+	margin-top:10px;	
+	overflow:auto;
+}
+
+body  ul {
+	list-style:none;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+}
+
+body  li {
+	float:left;
+	display:inline;
+}
+
+body  a {
+	display:block;
+	padding:5px;
+}
+
+body #cnt {
+	display:block;
+	text-align:center;
+	background-color:white;
+	border:3px solid #2E3192;
+	float:left;
+	height:65%;
+	width:60%;	
+	margin-top:1%;
+	overflow:auto;
+}
+
+body #sbr {
+	display:block;
+	text-align:center;
+	font-size:1.5em;
+	background-color:white;
+	border: 3px solid #2E3192;	
+	float:right;
+	width:37.5%;
+	height:65%;
+	margin-top:1%;
+	overflow:auto;
+}
+
+body #sbr h1 {
+	margin-left:10px;
+	margin-right:10px;
+	overflow:auto;
+}
+
+body #sbr p {
+	margin-left:10px;
+	margin-right:10px;
+	overflow:auto;
+}
+
+body #ftr {
+	text-align:center;
+	font-size:1em;
+	background-color:#63B1E5;
+	border:3px solid black;
+	position:absolute;
+	bottom:0;
+	width:80.5%;
+	height:30px;
+	padding:0.5px;
+}

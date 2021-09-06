@@ -1,0 +1,179 @@
+
+/*
+   Class:   4A7B
+   Name:    Saif Rashed
+   Purpose:	Eindtoets
+
+   mm-dd-yyyy Description
+   -------------------------------------------------
+   01-01-2017 Initial
+   11-03-2017 Added viewport functionality
+*/
+
+/************************************************
+* Include the padding and border to all elements*
+*************************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+/************************
+* Default setting       *
+*************************/
+
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:10px;
+	font-size:100%;
+	font-family:'Calibri', 'Arial', 'Helvetica';
+	color:white;
+	}
+
+	/*
+24px:16px = 1.5em 
+px delen door 16px is aantal em
+ROCMN colors
+ROCMN Blauw: #007AC9
+ROCMN Donkerbauw: #2E3192
+ROCMN Felblauw: #63B1E5
+ROCMN Groen: #50AA05
+ROCMN Lightgroen: #DCF5A5
+ROCMN Felgroen: #C9DD03
+*/
+	
+/************************
+* Header                *
+*************************/
+
+.hdr {
+	background-color:#2E3192;
+	font-size:4.0em;
+	text-align:center;
+	width:100%;
+	height:100px;
+}
+
+/************************
+* horizontal menu       *
+*************************/
+
+.hmenu {
+	background-color:#007AC9;
+	font-size:24px;
+	text-align:center;	
+	width:100%;
+	height:50px;
+}
+
+.hmenu ul {
+	list-style-type:none;
+  margin:0;
+  padding:0
+}
+
+.hmenu ul li {
+	float:left;
+	border-right:0px;
+	border-left:1px solid white;
+	padding:10px;
+}
+
+.hmenu a:link , a:visited {
+	text-decoration: none;
+	color:black
+}
+
+.hmenu a:hover {
+	text-decoration: none;
+	color:white
+}
+
+#buttonright {
+	float:right;
+} 
+
+/************************
+* Body                  *
+*************************/
+
+.container {
+	float: left;
+	width: 100%;
+	height: 75%;
+	text-align: left;
+	font-size: 1.0em;
+	color: #2E3192;
+	background-image: url("../img/bgrocmn.png");
+	background-repeat: repeat-y;
+	color: black;
+}
+
+#vmenu {
+	float:left;
+	font-size:1.5em;
+	color:black;
+	width:20%;
+	height:100%;
+}
+
+#vmenu ul {
+	margin:10px 0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+#vmenu li {
+	display:inline-block;
+	background-color:#50AA05;
+	width:200px;
+	padding:8px;
+	margin:7px 0px 7px 40px;
+	border:1px solid #2E3192;
+}
+
+#vmenu li:hover {
+	background-color:#DCF5A5;
+}
+
+#vmenu a {
+	text-decoration:none;
+}
+
+.container #cnt {
+	position:relative;
+	display:inline-block;
+	float:left;
+	color:black;
+	width:55%;
+	height:100%;
+	margin: 0 auto;
+}
+
+.container #sbr {
+	float:right;
+	text-align:center;
+	font-size:1em;
+	color:#2E3192;
+	background-color:#DCF5A5;
+	margin-top:75px;
+	width:20%;
+	height:100%;
+}
+
+/************************
+* Footer                *
+*************************/
+
+.ftr {
+  background-color:#63B1E5;
+	color:#2E3192;
+	text-align:center;
+  left: 0;
+  bottom: 0;
+  height: 35px;
+  width: 100%;
+  overflow:hidden;
+}

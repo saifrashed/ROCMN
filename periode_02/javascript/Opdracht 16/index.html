@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Geboortedag</title>
+</head>
+
+<body>
+	<p id="startDate">Answer</p>
+	<p id="eindeDate">Answer</p>
+	<p id="amountDay">Answer</p>
+<script>
+
+	var dayMilSec = 24*60*60*1000;
+	
+	var strStart = prompt("YYYY-MM-DD")
+	var strEinde = prompt("YYYY-MM-DD")
+	
+	var dateStart = new Date(strStart);
+	var dateEinde = new Date(strEinde);
+	
+	var amountDate = (dateEinde.getTime() - dateStart.getTime());
+	
+	document.getElementById("startDate").innerHTML = "Startdatum: " + strStart;
+	document.getElementById("eindeDate").innerHTML = "EindeDatum: " + strEinde;
+	document.getElementById("amountDay").innerHTML = "Aantal dagen: " + (amountDate/dayMilSec);
+
+</script>
+</body>
+
+
+</html>

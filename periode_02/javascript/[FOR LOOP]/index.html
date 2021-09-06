@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	For loop
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>For loop</title>
+</head>
+
+<body>
+
+<p id="tafel"></p>
+
+<script>
+
+var integerTafel = parseInt(prompt("Uw tafel 1-5 of 10-15"));
+var integerNummer;
+
+console.log(integerNummer);
+console.log(integerTafel);
+
+document.getElementById("tafel").innerHTML = "Tafel van " + integerTafel;
+
+for (integerNummer = 1; integerNummer < 10; integerNummer++) {
+
+	if ((integerTafel > 5) && (integerTafel < 10)) {
+		document.write("Niet rekenbaar");
+		continue;
+	}
+	
+	document.write((integerNummer * integerTafel) + "<br>");
+}
+
+</script>
+</body>
+
+</html>

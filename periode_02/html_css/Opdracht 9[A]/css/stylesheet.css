@@ -1,0 +1,40 @@
+
+/*
+   Class:   4A7B
+   Name:    Saif Rashed
+   Purpose:	Image Sprites
+
+   mm-dd-yyyy Description
+   -------------------------------------------------
+   01-01-2017 Initial
+   11-03-2017 Added viewport functionality
+*/
+
+/************************************************
+* Include the padding and border to all elements*
+*************************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+/************************
+* Default setting       *
+*************************/
+
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:10px;
+	font-size:100%;
+	font-family:'Calibri', 'Arial', 'Helvetica';
+	color:black;
+	}
+
+	/*
+24px:16px = 1.5em 
+px delen door 16px is aantal em
+
+*/
+	

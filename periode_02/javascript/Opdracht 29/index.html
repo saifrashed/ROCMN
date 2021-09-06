@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	Inloggen met een Method
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Inloggen [Met een Method]</title>
+</head>
+
+<body>
+
+	<script>
+	var unInput = prompt("Whats your name?")
+	var unArray = [
+		"kees",
+		"admin",
+		"sharon",
+	];
+	
+	var check = unArray.indexOf(unInput);
+	
+	if (check == -1) {
+		alert("Unsuccesfully!")
+	}
+	else {
+		alert("Welcome!");
+	}
+	
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	tafel berekenen
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	05-12-2017 Initial
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Tafel berekenen</title>
+</head>
+
+<body>
+	
+<script>
+	var tafel = parseInt(prompt("Write the number you want to calculate."));
+	var ndx = 0;
+	
+	do { 																																	 // Gebruik van de DO WHILE code
+			document.write("<br>" + ndx + " x " + tafel + " = " +(ndx*tafel)); // de complete formule
+			ndx = ndx + 1;																										 // verhoog NDX variable na elke formule
+			} while (ndx < 11);																								 //	reset de code als NDX nog minder dan 11 is
+			
+document.write("<br>")																									 // break
+			
+	for (ndx=1;ndx < 20;ndx++ ) {  																				 // Gebruik van de FOR LOOP code en ga door tot de 19
+			document.write("<br>" + ndx + " x " + tafel + " = " +(ndx*tafel)); // de complete formule
+			if (ndx == 10) break; 																					   // als ndx 10 is, stop de code
+	}	
+		
+</script>
+</body>
+
+
+</html>

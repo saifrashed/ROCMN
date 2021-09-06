@@ -1,0 +1,122 @@
+/*
+  Class:    4A7B
+  Name:     P. Willems
+  Purpose:  JavaScript toets periode 03
+
+  dd-mm-yyyy  Description
+  ----------  ------------------------------------------
+  10-04-2018  Initial
+*/ 
+
+/*************************
+ * Global values         *
+ *************************/
+body {
+  --rocmn_darkblue:    #2E3192;    
+  --rocmn_lightblue:   #D7EBFA;
+  --rocmn_brightblue:  #63B1E5;  
+  --rocmn_green:       #50AA05;  
+  --rocmn_lightgreen:  #DCF5A5;
+  --rocmn_brightgreen: #C9DD03; 
+  
+  --rocmn_boxshadow:   0px 10px 10px rgba(0,0,0,0.5); /*hoz-ver-blur-rgb met opacity*/
+}
+
+/**************************************************
+ * Include the padding and border to all elements * 
+ **************************************************/
+* {
+  box-sizing: border-box; 
+}
+
+/*************************
+ * Start a new row       *
+ *************************/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*************************
+ * Default setting       *
+ *************************/
+body { 
+  width: 100%; 
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 100%;
+  font-family: 'Calibri', 'Arial', 'Helvetica'; 
+  color: black;
+  background-image: url("../img/bgmob.png");
+  background-repeat: repeat-y;
+}
+
+/*************************
+ * Mobile first          *
+ *************************/
+h1 {
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: 'Calibri', 'Arial', 'Helvetica'; 
+  text-align: center;
+  color: white;
+  border-radius: 0px 25px 25px 0px;
+  box-shadow: var(--rocmn_boxshadow);
+  background-color: var(--rocmn_darkblue); 
+  margin-bottom: 30px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.00em;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px 25px 0px 0px;
+  box-shadow: var(--rocmn_boxshadow);
+  background-color: var(--rocmn_green); 
+  cursor: pointer;
+}
+
+#output_exercises {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1.0em;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px 0px 25px 0px;
+  box-shadow: var(--rocmn_boxshadow);
+  background-color: var(--rocmn_lightblue);
+}
+
+.btnSubmit {
+  width: 100%;
+  background-color: var(--rocmn_brightblue); 
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 5px;
+  font-size: 1.00em;
+  margin-bottom: 20px;
+}
+
+.btnSubmit:hover {
+  background-color: var(--rocmn_darkblue);
+  color: white;
+}
+
+
+
+ 
+ 

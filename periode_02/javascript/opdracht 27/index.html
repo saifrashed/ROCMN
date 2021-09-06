@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose:	#####
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Prime Number calc</title>
+</head>
+
+<body>
+
+<script>
+	
+	var num = parseInt(prompt("enter you number"));
+	
+	function prime(num){
+	 if(num == 1) return true;
+	 var t = num / 2;
+	 var k = 2;
+	 while(k <= t) {
+		 if(num % k == 0) {
+				return false
+		 } else {
+		 k++;  
+		}
+	 }
+		return true;
+	}
+
+	
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,72 @@
+
+/*
+   Class:   4A7B
+   Name:    Saif Rashed
+   Purpose:	#####
+
+   mm-dd-yyyy Description
+   -------------------------------------------------
+   01-01-2017 Initial
+   11-03-2017 Added viewport functionality
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:10px;
+	font-size:100%;
+	font-family:'Calibri', 'Arial', 'Helvetica';
+	color:black;
+}
+
+table, th, td {
+	vertical-align:top;
+	border:1px solid #2E3192;
+	border-collapse:collapse;
+	text-align:left;
+	font-family:"Arial";
+	font-size:30px;
+}
+
+th, td {
+	border:1px solid black;
+	padding:10px;
+}
+th {
+	background-color:#2E3192;
+	text-align:left;
+}
+
+.empty {
+	border:0px;
+	color:white;
+	background-color:white;
+}	
+
+.sum {
+	border: 2px dashed red;
+	color:blue;
+	text-align:right;
+	background-color:white;
+}
+
+.group {
+	background-color:white;
+}
+
+table tr:nth-child(even) {
+	background-color:lightblue;
+}
+
+table tr:nth-child(odd) {
+	background-color:white;
+}
+
+table tr:hover(odd) {
+	background-color:grey;
+}

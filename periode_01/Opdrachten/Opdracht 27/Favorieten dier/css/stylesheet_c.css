@@ -1,0 +1,43 @@
+body {
+ background-color: palegreen;
+}
+	
+img {
+  display: block;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+}
+	
+h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 4px;
+  border-style: solid;
+  border-color: red;
+}
+	
+#eerste {
+  text-align: center;
+  color: red;
+  background-color: black;
+}
+	
+#tweede {
+  text-align: center;
+  color: green;
+  background-color: black;
+}
+	
+#derde {
+  text-align: center;
+  color: blue;
+  background-color: black;
+}
+	
+pre {
+  text-align: center;
+  color: white;
+  background-color: black;
+}

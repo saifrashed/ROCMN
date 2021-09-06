@@ -1,0 +1,68 @@
+/*
+   Class:   4A7B
+   Name:    Saif Rashed
+   Purpose: ########
+
+   mm-dd-yyyy The brand Gucci
+   -------------------------------------------------
+   01-01-2017 Initial
+   11-03-2017 Added viewport functionality
+*/
+
+body {
+	background-color:white;
+	color:black;
+	padding-right:10px;
+	background-image: url('border.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1 {
+	text-align:center;
+	color:white;
+	background-color:black;
+	margin-left:185px;
+	margin-right:174px;
+	border-radius:10%;
+}
+
+h2 {
+	font-size:50px;
+	text-align: center;
+}
+
+#intro_header {
+	text-align:center;
+	margin-left:500px;
+	margin-right:500px;
+	margin-top:100px;
+}
+
+pre {
+	font-size:30px;
+	margin-right:400px;
+	text-align:center;
+}
+
+nav {
+    list-style-type: none;
+	width:400px;
+	margin:auto;
+}
+
+li {
+    float: left;
+	margin:10px;
+}
+
+a {
+    padding: 10px;
+    background-color:black;
+}
+
+img {
+	margin-left: 700px;
+}
+

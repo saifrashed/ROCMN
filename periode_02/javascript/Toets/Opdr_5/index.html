@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose: Toets opdracht 5
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Opdracht 5</title>
+</head>
+
+<body>
+
+<button id="modify" onclick="change(this.id)"> Veranderen </button> 
+<p id=inhoud>bloemen</p>
+
+<script>
+
+	var	flowerArray = ["tulp", "narcis", "lelie", "roos", "krokus"];
+	var blacklistArray = delete flowerArray[3];
+
+	console.log(flowerArray);
+	console.log(blacklistArray);
+
+	function update() {
+		document.getElementById("inhoud").innerHTML = flowerArray.toString();
+	}
+
+	function change(id) {
+		var input = prompt("Wat wilt u veranderen?");
+
+		if (flowerArray.indexOf(input) > -1) {
+			var y = prompt("Wat wilt u toevoegen?")
+			flowerArray.push(y);
+
+		}
+		else {
+			console.log("Sorry is niet beschikbaar")
+		}
+
+		update();
+	}
+
+
+</script>	
+
+</body>
+
+</html>

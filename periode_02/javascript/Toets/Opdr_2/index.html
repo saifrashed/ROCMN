@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<!--
+	Class:   4A7B
+	Name:    Saif Rashed
+	Purpose: Toets opdracht 2
+
+	mm-dd-yyyy Description
+	-------------------------------------------------
+	01-01-2017 Initial
+	11-03-2017 Added viewport functionality
+	-->
+
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width initial=scale=1.0" />
+	<link rel="stylesheet" type="text/css" href=".\css\stylesheet.css"/>
+	<script src=".\javascript\script.js"></script>
+	<title>Opdracht 2</title>
+</head>
+
+<body>
+
+
+<script>
+	var ageInput = new Date(prompt("Wat is je leeftijd? (yyyy-mm-dd)"));
+	var dateNow = new Date();
+
+	var displayDate = ageInput.getDate();
+	var displayMonth = ageInput.getMonth();
+	var displayYear = ageInput.getFullYear();
+	var age = dateNow.getFullYear() - ageInput.getFullYear() - 1;
+
+	console.log(age);
+
+	document.write("Jou geboorte datum: " + displayDate +"-"+ displayMonth +"-"+ displayYear +"<br>"+ "Jou leeftijd: " + age);
+
+</script>	
+
+</body>
+
+</html>
